@@ -1,0 +1,40 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container ul{
+  list-style-type: none;
+}
+.container ul li{
+  display: block;
+  size: 2em;
+  margin: 1em;
+  font-size: 250%;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container span{
+  font-size: 250%;
+  display: inline;
+  color: lightblue;
+}
+
+.imgRow{
+  margin: 1rem;
+  display: inline-block;
+}
+  
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,14 @@
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    font-style: italic;
+  }
+  
+  .modal p{
+    margin: 1em;
+  }

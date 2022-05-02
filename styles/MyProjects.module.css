@@ -1,0 +1,46 @@
+.projectContainer{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 4em;
+    margin-left: 20%;
+
+}
+.projectContainer div{
+    margin: 3em;
+}
+.projectContainer p{
+    width: 50%;
+}
+
+.divider{
+    background-color: black;
+    width: 60%;
+    height: .5em;
+    margin-left: 20%;
+}
+
+.projectContainer h6{
+    padding: .5em;
+    margin-top: 2em;
+    text-align: end;
+    font-weight: bold;
+}
+.title{
+ font-size: 3em;
+ text-align: center;
+ margin-bottom: 1em;
+}
+.image{
+    height: 15em;
+    width: 17em;
+    padding: 1rem;
+    margin-left: 4rem;
+}
+.projectContainer h6{
+    margin-top: 20em;
+    margin-left: 10em;
+    display: inline;
+    background-color: lightblue;
+}
