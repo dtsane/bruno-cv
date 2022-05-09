@@ -51,20 +51,21 @@ export default function Footer(){
         <label htmlFor="yourname">
           Your Name:
         </label> <br />
-        <input type="text" name="name" id="yourname" />
+        <input type="text" name="name" id="yourname" required />
       </p>
       <p>
         <label htmlFor="youremail">
           Your Email:
         </label> <br />
-        <input type="email" name="email" id="youremail" />
+        <input type="email" name="email" id="youremail" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" className='form-control' required />
       </p>
       <p>
         <label htmlFor="yourmessage">
           Message:
         </label> <br />
-        <textarea name="message" id="yourmessage"></textarea>
+        <textarea name="message" id="yourmessage" placeholder="Enter your message"required rows="4"></textarea>
       </p>
+      <p> <div data-netlify-recaptcha="true"></div></p>
       <p>
         <button type="submit">Send</button>
       </p>
