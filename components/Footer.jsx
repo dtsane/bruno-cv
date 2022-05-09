@@ -44,14 +44,15 @@ export default function Footer(){
         <div className={styles.container}>
         <div className={styles.mail}>
             <h1 id="contactForm">Contact Form</h1>
-            <form id='emailForm' onSubmit={handleEmail}>
+            <form id='emailForm' action="POST" data-netlify="true" onSubmit={handleEmail}>
                 <label>Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name" required className='form-control'/>
                 <label>Email</label>
-                <input type="text" name="user_email" id="user_email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" className='form-control' required />
+                <input type="text" name="email" id="user_email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" className='form-control' required />
                 <label>Message</label>
                 <textarea name="message" rows="4" id="message" className='form-control' placeholder="Enter your message"required />
                 <input type="submit" value="Send"/>
+                <div data-netlify-recaptcha="true"></div>
             </form>
         </div>
         <div className={styles.contacts}>
@@ -59,9 +60,6 @@ export default function Footer(){
             <a href="https://www.linkedin.com/in/bruno-tsane-0b255922a/"> <Image src={imgLinkin} alt="Linkin" width={100} height={100}/></a>
             <a href="https://github.com/dtsane"> <Image src={imgGit} alt="Git" width={100} height={100}/></a>
             <a href="https://twitter.com/bruno_tsane"> <Image src={imgTweet} alt="Tweeter" width={100} height={100}/></a>
-            
-            
-            <Image src={imgTweet} alt="Tweeter" width={100} height={100}/>
         </div>
         </div>
     <p>
