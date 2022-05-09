@@ -44,10 +44,10 @@ export default function Footer(){
         <div className={styles.container}>
         <div className={styles.mail}>
             <h1 id="contactForm">Contact Form</h1>
-            <form name="contact" method="POST" action="/">
-      <input type="hidden" name="form-name" value="contact" />
+            <form name="contact" method="POST" action="/" data-netlify="true" data-netlify-recaptcha="true">
+      <p><input type="hidden" name="form-name" value="contact" className={styles.visibility}/></p>
       <p>
-<input type="text" name="firstname" id="firstname" />
+        <input type="text" name="firstname" id="firstname" />
         <label htmlFor="yourname">
           Your Name:
         </label> <br />

@@ -41,3 +41,6 @@
 .contacts > div{
     margin: 1em;
 }
+.visibility{
+    display: none;
+}
