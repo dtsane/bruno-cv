@@ -17,10 +17,11 @@ export default function CerebrumApp(){
         <div className={styles.row}>
         <div className={styles.image}><Image src={imgAndroid} width={400} height={400} alt="Cerebum Lux App"/></div>
             <p>
-            This is an app I created for my company. The beta version app will be release in may 27th 2022 in google play.
-            It has for purpose to help client achieve their project goal such as website, mobile application ... 
-            They will able to request my services via the application and have 24/7 customers service help if they
-            need anything. I created this app with flutter for the front end, and firebase for the back end.
+            This was an app I created for my freelancing company. 
+            The objective is to help the client stay in contact with me via a chat app. 
+            They will be able to request my services via the application and have 24/7 
+            customer service help if they need anything. 
+            I created this app with flutter for the front end and firebase for the back end.
         </p>
         </div>
         <div className={styles.divider}></div>

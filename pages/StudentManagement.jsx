@@ -18,9 +18,9 @@ export default function StudentManagement(){
         <div className={styles.row}>
         <div className={styles.image}><Image src={imgCsharp} width={400} height={400} alt="Cerebum Lux App"/></div>
             <p>
-            This sofware was made in collaboration of 4 programmers. It was a simple sofware that had enable us 
-            to add, delete, modifie students. Futhermore, it gave us the capacity to also add or delete school programs.
-            The main tools that made this project possible is WPF, Csharp and MSSQL for the database.
+            A total of 4 programmers participated in the creation of this software. It is a simple software that enables us 
+          to add, delete, and modify students. Furthermore, it allowed us also to add or delete school programs.
+          The main tools that made this project possible are WPF, Csharp, and MSSQL for the database.
         </p>
         </div>
         <div className={styles.divider}></div>

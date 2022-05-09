@@ -18,8 +18,10 @@ export default function WebPortfolio(){
         <div className={styles.row}>
         <div className={styles.image}><Image src={imgNext} width={400} height={400} alt="Cerebum Lux App"/></div>
             <p>
-            This website is a collections of multiple project I have made so far as a programmer. It summaize the level
-            of my skills of different computer programming language. This website was made with Nextjs and Github and React.
+            This website is a collection of multiple projects I have made as a programmer. 
+            Every project is summarized with a paragraph describing the site's purpose and 
+            the tools and skills required to achieve it. 
+            This website was created with Nextjs and Github, and React.
         </p>
         </div>
         <div className={styles.divider}></div>
