@@ -44,16 +44,28 @@ export default function Footer(){
         <div className={styles.container}>
         <div className={styles.mail}>
             <h1 id="contactForm">Contact Form</h1>
-            <form id='emailForm' method="POST" data-netlify="true" onSubmit={handleEmail}>
-                <label>Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required className='form-control'/>
-                <label>Email</label>
-                <input type="text" name="email" id="user_email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" className='form-control' required />
-                <label>Message</label>
-                <textarea name="message" rows="4" id="message" className='form-control' placeholder="Enter your message"required />
-                <input type="submit" value="Send"/>
+            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name" id="name" placeholder="Enter your name" required className='form-control' /></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email" id="user_email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" className='form-control' required /></label>
+                </p>
+                <p>
+                    <label>Your Role: <select name="role[]" multiple>
+                    <option value="corporation">Corporation</option>
+                    <option value="employer">Employer</option>
+                    </select></label>
+                </p>
+                <p>
+                    <label>Message: <textarea name="message" rows="4" id="message" className='form-control' placeholder="Enter your message"required></textarea></label>
+                </p>
                 <div data-netlify-recaptcha="true"></div>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
             </form>
+
         </div>
         <div className={styles.contacts}>
             <a href="https://www.instagram.com/bruno_thecreator/"> <Image src={imgInsta} alt="Insta" width={100} height={100}/></a>
