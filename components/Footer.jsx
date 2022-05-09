@@ -44,16 +44,31 @@ export default function Footer(){
         <div className={styles.container}>
         <div className={styles.mail}>
             <h1 id="contactForm">Contact Form</h1>
-            <form id='emailForm' method="POST" action="/success" data-netlify="true" data-netlify-recaptcha="true" >
-                <label>Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name" required className='form-control'/>
-                <label>Email</label>
-                <input type="text" name="email" id="user_email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" className='form-control' required />
-                <label>Message</label>
-                <textarea name="message" rows="4" id="message" className='form-control' placeholder="Enter your message"required />
-                <div data-netlify-recaptcha="true"></div>
-                <button type="submit">Send</button>
-            </form>
+            <form name="contact" method="POST" action="/">
+      <input type="hidden" name="form-name" value="contact" />
+      <p>
+<input type="text" name="firstname" id="firstname" />
+        <label htmlFor="yourname">
+          Your Name:
+        </label> <br />
+        <input type="text" name="name" id="yourname" />
+      </p>
+      <p>
+        <label htmlFor="youremail">
+          Your Email:
+        </label> <br />
+        <input type="email" name="email" id="youremail" />
+      </p>
+      <p>
+        <label htmlFor="yourmessage">
+          Message:
+        </label> <br />
+        <textarea name="message" id="yourmessage"></textarea>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
         </div>
         <div className={styles.contacts}>
             <a href="https://www.instagram.com/bruno_thecreator/"> <Image src={imgInsta} alt="Insta" width={100} height={100}/></a>
