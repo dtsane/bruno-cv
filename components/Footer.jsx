@@ -9,7 +9,7 @@ import imgGit from '../public/whitGit.png'
 export default function Footer(){
 
 
-    const handleEmail = async (e) => {
+   /* const handleEmail = async (e) => {
         e.preventDefault();
 
         let inputName = document.getElementById('name');
@@ -37,20 +37,21 @@ export default function Footer(){
            alert('Your message was send succesfully! ');
        }
 
-    }
+    }*/
 
     return <>
         <footer className={styles.footer}>
         <div className={styles.container}>
         <div className={styles.mail}>
             <h1 id="contactForm">Contact Form</h1>
-            <form id='emailForm' action="POST" method="POST" data-netlify="true" >
+            <form id='emailForm' method="POST" data-netlify="true" data-netlify-recaptcha="true" >
                 <label>Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name" required className='form-control'/>
                 <label>Email</label>
                 <input type="text" name="email" id="user_email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" className='form-control' required />
                 <label>Message</label>
                 <textarea name="message" rows="4" id="message" className='form-control' placeholder="Enter your message"required />
+                <div data-netlify-recaptcha="true"></div>
                 <button type="submit">Send</button>
             </form>
         </div>
