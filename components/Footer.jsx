@@ -44,7 +44,7 @@ export default function Footer(){
         <div className={styles.container}>
         <div className={styles.mail}>
             <h1 id="contactForm">Contact Form</h1>
-            <form id='emailForm' action="POST" data-netlify="true" onSubmit={handleEmail}>
+            <form id='emailForm' method="POST" data-netlify="true" onSubmit={handleEmail}>
                 <label>Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name" required className='form-control'/>
                 <label>Email</label>
