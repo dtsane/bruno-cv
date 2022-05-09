@@ -46,7 +46,6 @@ export default function Footer(){
             <h1 id="contactForm">Contact Form</h1>
             <form name="contact" method="POST" action="/" data-netlify="true" data-netlify-recaptcha="true">
       <p>
-        <input type="text" name="firstname" id="firstname" />
         <label htmlFor="yourname">
           Your Name:
         </label> <br />
