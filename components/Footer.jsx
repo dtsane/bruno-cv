@@ -55,9 +55,12 @@ export default function Footer(){
             </form>
         </div>
         <div className={styles.contacts}>
-            <Image src={imgInsta} alt="Insta" width={100} height={100}/>
-            <Image src={imgLinkin} alt="Linkin" width={100} height={100}/>
-            <Image src={imgGit} alt="Git" width={100} height={100}/>
+            <a href="https://www.instagram.com/bruno_thecreator/"> <Image src={imgInsta} alt="Insta" width={100} height={100}/></a>
+            <a href="https://www.linkedin.com/in/bruno-tsane-0b255922a/"> <Image src={imgLinkin} alt="Linkin" width={100} height={100}/></a>
+            <a href="https://github.com/dtsane"> <Image src={imgGit} alt="Git" width={100} height={100}/></a>
+            <a href="https://twitter.com/bruno_tsane"> <Image src={imgTweet} alt="Tweeter" width={100} height={100}/></a>
+            
+            
             <Image src={imgTweet} alt="Tweeter" width={100} height={100}/>
         </div>
         </div>
